@@ -97,7 +97,9 @@ public class Server extends javax.swing.JFrame {
         try{
             String msjo = "";
             msjo = txt_msj.getText().trim();
+            txt_msj.setText("");
             ouput.writeUTF(msjo);
+            
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
